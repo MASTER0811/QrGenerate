@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr Code Generator</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MASTER0811/write_simple.css/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../return.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/MASTER0811/Google-fonts-api.css/src/regular_fonts.css">
+    <link rel="icon" href="https://img.icons8.com/external-inipagistudio-lineal-color-inipagistudio/64/000000/external-qr-scan-logistic-service-inipagistudio-lineal-color-inipagistudio.png">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+<body class="allct bd_w bd_h mg0 pd0 bglightblue poppins">
+    <div class="container">
+        <div class="qrShow">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="qrkeep">
+            <button class="mdc-button foo-button SaveButton" onclick="keepImage()">
+                <div class="mdc-button__ripple"></div>
+                <span class="mdc-button__label">Keep Image</span>
+            </button>
+        </div>
+        <div class="qrValue">
+            <div class="allct pst_rlt">
+                <span class="fas fa-qrcode" onclick="Codeclick()" title="Clear Now"></span>
+                <input type="text" id="qr-text" placeholder="Type Your Text Or Url" oninput="generateQRCode()" name="qrValue">
+            </div>
+        </div>
+    </div>
+    <!-- <a href="https://master0811.w3spaces.com" class="return"> -->
+    <a href="http://localhost:5500/master0811.w3spaces.com" class="return">
+        <i class="fa-solid fa-house"></i>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
